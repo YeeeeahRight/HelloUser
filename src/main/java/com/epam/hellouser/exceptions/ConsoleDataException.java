@@ -1,4 +1,4 @@
-package com.epam.logic.hellouser.exceptions;
+package com.epam.hellouser.exceptions;
 
 public class ConsoleDataException extends Exception {
 

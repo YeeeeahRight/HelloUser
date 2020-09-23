@@ -1,8 +1,8 @@
 package com.epam.logic;
 
 
-import com.epam.logic.hellouser.logic.Transformer;
-import com.epam.logic.hellouser.logic.HelloStringTransformer;
+import com.epam.hellouser.logic.Transformer;
+import com.epam.hellouser.logic.HelloStringTransformer;
 import org.junit.Assert;
 import org.junit.Test;
 

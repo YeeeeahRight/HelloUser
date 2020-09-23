@@ -1,4 +1,4 @@
-package com.epam.logic.hellouser.view;
+package com.epam.hellouser.view;
 
 public interface ResultPrinter {
 

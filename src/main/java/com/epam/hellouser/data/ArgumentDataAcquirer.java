@@ -1,4 +1,4 @@
-package com.epam.logic.hellouser.data;
+package com.epam.hellouser.data;
 
 public class ArgumentDataAcquirer implements DataAcquirer {
 

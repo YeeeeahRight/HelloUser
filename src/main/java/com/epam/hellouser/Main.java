@@ -1,11 +1,11 @@
-package com.epam.logic.hellouser;
+package com.epam.hellouser;
 
-import com.epam.logic.hellouser.data.DataAcquirer;
-import com.epam.logic.hellouser.data.DataAcquirerFactory;
-import com.epam.logic.hellouser.exceptions.ConsoleDataException;
-import com.epam.logic.hellouser.logic.HelloStringTransformer;
-import com.epam.logic.hellouser.view.Hello;
-import com.epam.logic.hellouser.view.ResultPrinter;
+import com.epam.hellouser.data.DataAcquirer;
+import com.epam.hellouser.data.DataAcquirerFactory;
+import com.epam.hellouser.exceptions.ConsoleDataException;
+import com.epam.hellouser.logic.HelloStringTransformer;
+import com.epam.hellouser.view.Hello;
+import com.epam.hellouser.view.ResultPrinter;
 
 public class Main {
 

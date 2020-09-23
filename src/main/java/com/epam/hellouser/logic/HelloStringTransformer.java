@@ -1,4 +1,4 @@
-package com.epam.logic.hellouser.logic;
+package com.epam.hellouser.logic;
 
 public class HelloStringTransformer implements Transformer {
 

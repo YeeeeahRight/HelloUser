@@ -1,6 +1,6 @@
-package com.epam.logic.hellouser.data;
+package com.epam.hellouser.data;
 
-import com.epam.logic.hellouser.exceptions.ConsoleDataException;
+import com.epam.hellouser.exceptions.ConsoleDataException;
 
 import java.io.BufferedReader;
 import java.io.IOException;

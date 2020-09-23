@@ -1,9 +1,9 @@
 package com.epam.data;
 
-import com.epam.logic.hellouser.data.ArgumentDataAcquirer;
-import com.epam.logic.hellouser.data.ConsoleDataAcquirer;
-import com.epam.logic.hellouser.data.DataAcquirer;
-import com.epam.logic.hellouser.data.DataAcquirerFactory;
+import com.epam.hellouser.data.ArgumentDataAcquirer;
+import com.epam.hellouser.data.ConsoleDataAcquirer;
+import com.epam.hellouser.data.DataAcquirer;
+import com.epam.hellouser.data.DataAcquirerFactory;
 import org.junit.Assert;
 import org.junit.Test;
 
