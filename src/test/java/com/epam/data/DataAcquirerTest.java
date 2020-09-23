@@ -1,6 +1,6 @@
 package com.epam.data;
 
-import com.epam.hellouser.data.ArgumentDataAcquirer;
+import com.epam.hellouser.data.ArgumentsDataAcquirer;
 import com.epam.hellouser.data.ConsoleDataAcquirer;
 import com.epam.hellouser.data.DataAcquirer;
 import com.epam.hellouser.data.DataAcquirerFactory;
@@ -8,6 +8,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class DataAcquirerTest {
+
     //given
     DataAcquirerFactory dataAcquirerCreator = new DataAcquirerFactory();
 
@@ -24,7 +25,7 @@ public class DataAcquirerTest {
         //when
         DataAcquirer acquirer = dataAcquirerCreator.createDataAcquirer(new String[]{"Alex", "3431garbage"});
         //then
-        Assert.assertTrue(acquirer instanceof ArgumentDataAcquirer);
+        Assert.assertTrue(acquirer instanceof ArgumentsDataAcquirer);
     }
 
 

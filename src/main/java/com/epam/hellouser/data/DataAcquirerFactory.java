@@ -7,7 +7,7 @@ public class DataAcquirerFactory {
         if (args.length == 0) {
             dataAcquirer = new ConsoleDataAcquirer();
         } else {
-            dataAcquirer = new ArgumentDataAcquirer(args[0]);
+            dataAcquirer = new ArgumentsDataAcquirer(args);
         }
         return dataAcquirer;
     }
