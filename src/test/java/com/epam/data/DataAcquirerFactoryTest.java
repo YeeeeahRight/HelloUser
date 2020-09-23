@@ -7,7 +7,7 @@ import com.epam.hellouser.data.DataAcquirerFactory;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class DataAcquirerTest {
+public class DataAcquirerFactoryTest {
 
     //given
     DataAcquirerFactory dataAcquirerCreator = new DataAcquirerFactory();
