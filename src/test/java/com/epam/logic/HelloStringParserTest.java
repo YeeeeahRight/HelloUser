@@ -1,20 +1,20 @@
 package com.epam.logic;
 
 
-import com.epam.hellouser.logic.Transformer;
-import com.epam.hellouser.logic.HelloStringTransformer;
+import com.epam.hellouser.logic.Parser;
+import com.epam.hellouser.logic.HelloStringParser;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class HelloStringTransformerTest {
+public class HelloStringParserTest {
 
     //given
-    private Transformer calculator = new HelloStringTransformer();
+    private Parser calculator = new HelloStringParser();
 
     @Test
     public void testHelloStringCalculatorWhenUserNameIsNumber() {
         //when
-        String fullHelloStr = calculator.transformFullHello("12345");
+        String fullHelloStr = calculator.parseFullHello("12345");
         //then
         Assert.assertEquals("Hello, 12345!", fullHelloStr);
     }
@@ -22,7 +22,7 @@ public class HelloStringTransformerTest {
     @Test
     public void testHelloStringCalculatorWhenUserNameIsString() {
         //when
-        String fullHelloStr = calculator.transformFullHello("Alex");
+        String fullHelloStr = calculator.parseFullHello("Alex");
         //then
         Assert.assertEquals("Hello, Alex!", fullHelloStr);
     }
