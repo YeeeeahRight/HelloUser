@@ -1,8 +1,7 @@
 package com.epam.hellouser.logic;
 
-public class HelloStringParser implements Parser {
+public class HelloStringParser {
 
-    @Override
     public String parseFullHello(String userName) {
         return "Hello, " + userName + "!";
     }

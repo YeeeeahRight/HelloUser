@@ -1,7 +1,7 @@
 package com.epam.hellouser.data;
 
-import com.epam.hellouser.exceptions.ConsoleDataException;
+import com.epam.hellouser.exceptions.EmptyArgumentsException;
 
 public interface DataAcquirer {
-    String getUserName() throws ConsoleDataException;
+    String getUserName(String[] programArguments) throws EmptyArgumentsException;
 }

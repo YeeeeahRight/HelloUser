@@ -1,14 +1,18 @@
 package com.epam.hellouser.data;
 
+import com.epam.hellouser.enums.InputWayEnum;
+import com.epam.hellouser.exceptions.UnknownInputWayException;
+
 public class DataAcquirerFactory {
 
-    public DataAcquirer createDataAcquirer(String[] args) {
-        DataAcquirer dataAcquirer;
-        if (args.length == 0) {
-            dataAcquirer = new ConsoleDataAcquirer();
-        } else {
-            dataAcquirer = new ArgumentsDataAcquirer(args);
+    private static final String UNKNOWN_INPUT_WAY_MESSAGE = "Unknown input way.";
+
+    public DataAcquirer createDataAcquirer(InputWayEnum way) throws UnknownInputWayException {
+        switch (way) {
+            case ARGUMENTS:
+                return new ArgumentsDataAcquirer();
+            default:
+                throw new UnknownInputWayException(UNKNOWN_INPUT_WAY_MESSAGE);
         }
-        return dataAcquirer;
     }
 }
